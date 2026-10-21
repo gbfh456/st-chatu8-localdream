@@ -2322,7 +2322,21 @@ var init_config = __esm({
     init_themePresets();
     init_defaultToolCallConfig();
     extensionName = "st-chatu8";
-    extensionFolderPath = `scripts/extensions/third-party/${extensionName}`;
+    extensionFolderPath = (() => {
+      try {
+        const nodes = document.querySelectorAll('script[src*="/scripts/extensions/third-party/"], link[href*="/scripts/extensions/third-party/"]');
+        for (const node of nodes) {
+          const url = node.getAttribute("src") || node.getAttribute("href") || "";
+          const match = url.match(/scripts\/extensions\/third-party\/(st-chatu8[^/]*)\//);
+          if (match) {
+            return `scripts/extensions/third-party/${match[1]}`;
+          }
+        }
+      } catch (error) {
+        console.warn("[st-chatu8] \u81EA\u52A8\u68C0\u6D4B\u63D2\u4EF6\u76EE\u5F55\u5931\u8D25\uFF0C\u56DE\u9000\u5230\u9ED8\u8BA4\u8DEF\u5F84", error);
+      }
+      return `scripts/extensions/third-party/${extensionName}`;
+    })();
     EventType = {
       GENERATE_IMAGE_REQUEST: "generate-image-request",
       GENERATE_IMAGE_RESPONSE: "generate-image-response"
@@ -81006,7 +81020,7 @@ function initAiAssistant(modal) {
       return;
     }
     const chatBody = dom.chatBody;
-    const icon = '<img src="/scripts/extensions/third-party/st-chatu8/html/settings/\u667A\u7ED8\u59EC\u5934\u50CF.png" alt="\u667A\u7ED8\u59EC" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">';
+    const icon = `<img src="${extensionFolderPath}/html/settings/\u667A\u7ED8\u59EC\u5934\u50CF.png" alt="\u667A\u7ED8\u59EC" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">`;
     const messageHtml = `
             <div class="st-chatu8-ai-msg system-msg">
                 <div class="msg-avatar">${icon}</div>
