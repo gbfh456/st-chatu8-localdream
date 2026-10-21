@@ -1,0 +1,17 @@
+{
+    "id": "7a078610-c984-4f1f-a4be-3831165f57ea",
+    "scriptName": "FM-UI隐藏变量标签",
+    "findRegex": "/<[Uu]pdate[Vv]ariable>[\\s\\S]*?<\\/[Uu]pdate[Vv]ariable>/gm",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+        2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": false,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null
+}

@@ -1,0 +1,15 @@
+{
+    "id": "e22915ef-8eb0-46c4-8eb4-4616c250651a",
+    "scriptName": "FM-隐藏变量显示",
+    "findRegex": "/<CURRENT_VARIABLES>[\\s\\S]*?<\\/CURRENT_VARIABLES>/gm",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+        2
+    ],
+    "disabled": false,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0
+}

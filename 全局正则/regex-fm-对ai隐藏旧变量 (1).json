@@ -1,0 +1,17 @@
+{
+    "id": "d7aaf251-5ab8-40b9-bb8a-c85a83e3b2e1",
+    "scriptName": "FM-对AI隐藏旧变量",
+    "findRegex": "/<[Uu]pdate[Vv]ariable>[\\s\\S]*?<\\/[Uu]pdate[Vv]ariable>/gm",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+        2
+    ],
+    "disabled": false,
+    "markdownOnly": false,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": 2,
+    "maxDepth": null
+}

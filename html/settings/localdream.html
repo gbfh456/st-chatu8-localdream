@@ -1,0 +1,242 @@
+<div id="ch-tab-localdream">
+    <div class="ch-prompts-section st-chatu8-settings-section st-chatu8-collapsible-section is-collapsed" data-section-id="fixed_prompts_localdream">
+        <div class="st-chatu8-section-header">
+            <h3 class="st-chatu8-section-title">固定提示词</h3>
+            <span class="st-chatu8-section-toggle">
+                <i class="fa-solid fa-chevron-down st-chatu8-section-toggle-icon"></i>
+            </span>
+        </div>
+        <div class="st-chatu8-section-body">
+            <div class="st-chatu8-field">
+                <label for="yusheid_localdream">提示词预设</label>
+                <div class="st-chatu8-profile-controls">
+                    <select id="yusheid_localdream" class="st-chatu8-select"></select>
+                    <div class="st-chatu8-preset-box-wrapper">
+                        <button type="button" class="st-chatu8-icon-btn st-chatu8-preset-box-btn" title="预设操作收纳盒">
+                            <i class="fa-solid fa-table-cells"></i>
+                        </button>
+                        <div class="st-chatu8-preset-box-dropdown">
+                            <div class="st-chatu8-preset-box-header">
+                                <span class="st-chatu8-preset-box-title"><i class="fa-solid fa-box-archive"></i> 提示词预设操作</span>
+                                <button type="button" class="st-chatu8-preset-box-close" title="关闭">&times;</button>
+                            </div>
+                            <div class="st-chatu8-preset-box-group">
+                                <span class="st-chatu8-preset-box-group-label">预设管理</span>
+                                <div class="st-chatu8-preset-box-grid">
+                                    <button type="button" class="st-chatu8-preset-box-item" id="st_chatu8_tishici_visual_select_localdream" title="可视化选择"><i class="fa-solid fa-grip"></i><span>可视化</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="st_chatu8_tishici_new_localdream" title="新建预设"><i class="fa-solid fa-plus"></i><span>新建</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="st_chatu8_tishici_update_style_localdream" title="保存修改"><i class="fa-solid fa-save"></i><span>保存</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="st_chatu8_tishici_save_style_localdream" title="另存为新预设"><i class="fa-solid fa-file-export"></i><span>另存为</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="st_chatu8_tishici_rename_localdream" title="重命名预设"><i class="fa-solid fa-pen"></i><span>重命名</span></button>
+                                </div>
+                            </div>
+                            <div class="st-chatu8-preset-box-group">
+                                <span class="st-chatu8-preset-box-group-label">导入与导出</span>
+                                <div class="st-chatu8-preset-box-grid">
+                                    <button type="button" class="st-chatu8-preset-box-item" id="st_chatu8_tishici_export_current_localdream" title="导出当前预设"><i class="fa-solid fa-upload"></i><span>导出当前</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="st_chatu8_tishici_export_all_localdream" title="导出全部预设"><i class="fa-solid fa-file-export"></i><span>导出全部</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="st_chatu8_tishici_import_localdream" title="导入预设文件"><i class="fa-solid fa-download"></i><span>导入</span></button>
+                                </div>
+                            </div>
+                            <div class="st-chatu8-preset-box-group">
+                                <span class="st-chatu8-preset-box-group-label">危险操作</span>
+                                <div class="st-chatu8-preset-box-grid">
+                                    <button type="button" class="st-chatu8-preset-box-item danger" id="st_chatu8_tishici_delete_style_localdream" title="删除预设"><i class="fa-solid fa-trash"></i><span>删除预设</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="st-chatu8-field-col">
+                <label for="fixedPrompt_localdream">固定正面提示词 <span class="st-chatu8-unsaved-warning" title="设置尚未保存" style="display: none;"><i class="fa-solid fa-triangle-exclamation"></i></span></label>
+                <button class="st-chatu8-icon-btn" id="translate_fixedPrompt_localdream" title="翻译" style="align-self: flex-end; margin: 4px 0;"><i class="fa-solid fa-language"></i></button>
+                <textarea id="fixedPrompt_localdream" class="st-chatu8-textarea" rows="4"></textarea>
+                <div id="fixedPrompt_localdream-results" class="ch-autocomplete-results"></div>
+            </div>
+            <div class="st-chatu8-field-col">
+                <label for="fixedPrompt_end_localdream">后置固定正面提示词 <span class="st-chatu8-unsaved-warning" title="设置尚未保存" style="display: none;"><i class="fa-solid fa-triangle-exclamation"></i></span></label>
+                <button class="st-chatu8-icon-btn" id="translate_fixedPrompt_end_localdream" title="翻译" style="align-self: flex-end; margin: 4px 0;"><i class="fa-solid fa-language"></i></button>
+                <textarea id="fixedPrompt_end_localdream" class="st-chatu8-textarea" rows="4"></textarea>
+                <div id="fixedPrompt_end_localdream-results" class="ch-autocomplete-results"></div>
+            </div>
+            <div class="st-chatu8-field-col">
+                <label for="negativePrompt_localdream">固定负面提示词 <span class="st-chatu8-unsaved-warning" title="设置尚未保存" style="display: none;"><i class="fa-solid fa-triangle-exclamation"></i></span></label>
+                <textarea id="negativePrompt_localdream" class="st-chatu8-textarea" rows="4"></textarea>
+                <div id="negativePrompt_localdream-results" class="ch-autocomplete-results"></div>
+            </div>
+        </div>
+    </div>
+    <div class="st-chatu8-settings-section st-chatu8-collapsible-section is-collapsed" data-section-id="prompt_replace_localdream">
+        <div class="st-chatu8-section-header">
+            <h3 class="st-chatu8-section-title">提示词替换</h3>
+            <span class="st-chatu8-section-toggle">
+                <i class="fa-solid fa-chevron-down st-chatu8-section-toggle-icon"></i>
+            </span>
+        </div>
+        <div class="st-chatu8-section-body">
+            <div class="st-chatu8-field">
+                <label for="prompt_replace_id_localdream">提示词替换</label>
+                <div class="st-chatu8-profile-controls">
+                    <select id="prompt_replace_id_localdream" class="st-chatu8-select"></select>
+                    <div class="st-chatu8-preset-box-wrapper">
+                        <button type="button" class="st-chatu8-icon-btn st-chatu8-preset-box-btn" title="预设操作收纳盒">
+                            <i class="fa-solid fa-table-cells"></i>
+                        </button>
+                        <div class="st-chatu8-preset-box-dropdown">
+                            <div class="st-chatu8-preset-box-header">
+                                <span class="st-chatu8-preset-box-title"><i class="fa-solid fa-box-archive"></i> 替换预设操作</span>
+                                <button type="button" class="st-chatu8-preset-box-close" title="关闭">&times;</button>
+                            </div>
+                            <div class="st-chatu8-preset-box-group">
+                                <span class="st-chatu8-preset-box-group-label">预设管理</span>
+                                <div class="st-chatu8-preset-box-grid">
+                                    <button type="button" class="st-chatu8-preset-box-item" id="prompt_replace_new_localdream" title="新建预设"><i class="fa-solid fa-plus"></i><span>新建</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="prompt_replace_update_style_localdream" title="保存修改"><i class="fa-solid fa-save"></i><span>保存</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="prompt_replace_save_style_localdream" title="另存为新预设"><i class="fa-solid fa-file-export"></i><span>另存为</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="prompt_replace_rename_localdream" title="重命名预设"><i class="fa-solid fa-pen"></i><span>重命名</span></button>
+                                </div>
+                            </div>
+                            <div class="st-chatu8-preset-box-group">
+                                <span class="st-chatu8-preset-box-group-label">导入与导出</span>
+                                <div class="st-chatu8-preset-box-grid">
+                                    <button type="button" class="st-chatu8-preset-box-item" id="prompt_replace_export_current_localdream" title="导出当前预设"><i class="fa-solid fa-upload"></i><span>导出当前</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="prompt_replace_export_all_localdream" title="导出全部预设"><i class="fa-solid fa-file-export"></i><span>导出全部</span></button>
+                                    <button type="button" class="st-chatu8-preset-box-item" id="prompt_replace_import_localdream" title="导入预设文件"><i class="fa-solid fa-download"></i><span>导入</span></button>
+                                </div>
+                            </div>
+                            <div class="st-chatu8-preset-box-group">
+                                <span class="st-chatu8-preset-box-group-label">危险操作</span>
+                                <div class="st-chatu8-preset-box-grid">
+                                    <button type="button" class="st-chatu8-preset-box-item danger" id="prompt_replace_delete_style_localdream" title="删除预设"><i class="fa-solid fa-trash"></i><span>删除预设</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="st-chatu8-field-col">
+                <label for="prompt_replace_text_localdream">替换规则 <span class="st-chatu8-unsaved-warning" title="设置尚未保存" style="display: none;"><i class="fa-solid fa-triangle-exclamation"></i></span></label>
+                <textarea id="prompt_replace_text_localdream" class="st-chatu8-textarea" rows="4"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="st-chatu8-settings-section">
+        <div class="st-chatu8-field">
+            <label for="AQT_localdream">正面质量预设</label>
+            <select id="AQT_localdream" class="st-chatu8-select">
+                <option value="best quality, amazing quality, very aesthetic, absurdres">启用</option>
+                <option value="">禁用</option>
+            </select>
+        </div>
+        <div class="st-chatu8-field">
+            <label for="UCP_localdream">负面质量预设</label>
+            <select id="UCP_localdream" class="st-chatu8-select">
+                <option value="bad proportions, out of focus, username, text, bad anatomy, lowres, worstquality, watermark, cropped, bad body, deformed, mutated, disfigured, poorly drawn face, malformed hands, extra arms, extra limb, missing limb, too many fingers, extra legs, bad feet, missing fingers, fused fingers, acnes, floating limbs, disconnected limbs, long neck, long body, mutation, ugly, blurry, low quality, sketches, normal quality, monochrome, grayscale, signature, logo, jpeg artifacts, unfinished, displeasing, chromatic aberration, extra digits, artistic error, scan, abstract, photo, realism, screencap">作者预设</option>
+                <option value="">无</option>
+            </select>
+        </div>
+    </div>
+    <div class="st-chatu8-settings-section">
+        <h3>LocalDream 接口</h3>
+        <div class="st-chatu8-field">
+            <label for="localdreamUrl">API 地址</label>
+            <div class="st-chatu8-input-group">
+                <i class="fa-solid fa-exclamation-triangle st-chatu8-url-warning-icon" title="无效的URL格式"></i>
+                <input type="text" id="localdreamUrl" class="st-chatu8-text-input" placeholder="http://127.0.0.1:8081">
+                <button id="testLocalDream" class="st-chatu8-btn">测试连接</button>
+            </div>
+        </div>
+        <div class="st-chatu8-field-col">
+            <label for="localdream-help">使用前必读</label>
+            <div id="localdream-help" class="st-chatu8-text-input" style="height:auto;padding:10px;line-height:1.7;font-size:13px;">
+                1. 请先在手机（或同一局域网的设备）上打开 <b>LocalDream（本地梦境）</b> App，载入模型并开启「API 服务器」（默认端口 8081）。<br>
+                2. 插件与 App 跑在同一台手机时用 <b>http://127.0.0.1:8081</b>；跨设备时请填手机在局域网中的地址，例如 <b>http://192.168.1.100:8081</b>。<br>
+                3. 如果酒馆页面是 <b>https://</b> 打开，浏览器会拦截指向 http:// 本地地址的请求（混合内容）。此时请在酒馆设置里关闭「强制 HTTPS」，或改用同网段的 http 页面访问酒馆。<br>
+                4. LocalDream 采用流式（SSE）返回原始 RGB 像素，插件会自动转换成图片插入聊天，并沿用当前的提示词预设、提示词替换、缓存与语气触发逻辑。<br>
+                5. 手机端生成较慢，建议把超时设为 300 秒以上；长按图片「修改 tag / 重新生成」同样可用（分辨率会写入生成参数）。
+            </div>
+        </div>
+    </div>
+    <div class="st-chatu8-settings-section">
+        <h3>生成参数</h3>
+        <div class="st-chatu8-field">
+            <label for="localdream_resolution_mode">分辨率模式</label>
+            <select id="localdream_resolution_mode" class="st-chatu8-select">
+                <option value="size">按宽高</option>
+                <option value="aspect">按比例</option>
+                <option value="custom">自定义</option>
+            </select>
+        </div>
+        <div id="localdream-size-fields">
+            <div class="st-chatu8-field">
+                <label for="localdream_width">宽度</label>
+                <input type="number" id="localdream_width" class="st-chatu8-text-input" min="128" max="2048" step="64">
+            </div>
+            <div class="st-chatu8-field">
+                <label for="localdream_height">高度</label>
+                <input type="number" id="localdream_height" class="st-chatu8-text-input" min="128" max="2048" step="64">
+            </div>
+        </div>
+        <div id="localdream-aspect-fields" style="display:none">
+            <div class="st-chatu8-field">
+                <label for="localdream_aspect_ratio">纵横比</label>
+                <select id="localdream_aspect_ratio" class="st-chatu8-select">
+                    <option value="1:1">1:1（正方形）</option>
+                    <option value="3:4">3:4（竖图）</option>
+                    <option value="4:3">4:3（横图）</option>
+                </select>
+            </div>
+        </div>
+        <div id="localdream-custom-fields" style="display:none">
+            <div class="st-chatu8-field">
+                <label for="localdream_custom_resolution">自定义分辨率</label>
+                <input type="text" id="localdream_custom_resolution" class="st-chatu8-text-input" placeholder="例如 512x768，或 3:4，或 512">
+            </div>
+        </div>
+        <div class="st-chatu8-field">
+            <label for="localdream_steps">步数</label>
+            <input type="number" id="localdream_steps" class="st-chatu8-text-input" min="1" max="100">
+        </div>
+        <div class="st-chatu8-field">
+            <label for="localdream_cfg">CFG 引导强度</label>
+            <input type="number" id="localdream_cfg" class="st-chatu8-text-input" min="1" max="20" step="0.5">
+        </div>
+        <div class="st-chatu8-field">
+            <label for="localdream_seed">随机种子</label>
+            <input type="text" id="localdream_seed" class="st-chatu8-text-input" placeholder="留空为随机">
+        </div>
+        <div class="st-chatu8-field">
+            <label for="localdream_denoise_strength">去噪强度（%）</label>
+            <input type="number" id="localdream_denoise_strength" class="st-chatu8-text-input" min="5" max="100" step="5">
+        </div>
+        <div class="st-chatu8-field">
+            <label for="localdream_scheduler">采样器</label>
+            <select id="localdream_scheduler" class="st-chatu8-select">
+                <option value="dpm">DPM</option>
+                <option value="dpm_sde">DPM SDE</option>
+                <option value="euler">Euler</option>
+                <option value="euler_a">Euler A</option>
+                <option value="lcm">LCM</option>
+            </select>
+        </div>
+        <div class="st-chatu8-field">
+            <label for="localdream_use_karras">Karras 降噪方程</label>
+            <select id="localdream_use_karras" class="st-chatu8-select">
+                <option value="true">启用</option>
+                <option value="false">禁用</option>
+            </select>
+        </div>
+        <div class="st-chatu8-field">
+            <label for="localdream_show_process">返回渲染过程帧</label>
+            <select id="localdream_show_process" class="st-chatu8-select">
+                <option value="false">关闭</option>
+                <option value="true">开启</option>
+            </select>
+        </div>
+        <div class="st-chatu8-field">
+            <label for="localdream_timeout">请求超时（秒）</label>
+            <input type="number" id="localdream_timeout" class="st-chatu8-text-input" min="30" max="3600" step="30">
+        </div>
+    </div>
+</div>
