@@ -1,0 +1,17 @@
+{
+    "id": "dad65a81-dada-44dd-86fd-1e121d7d9074",
+    "scriptName": "隐藏imgthink",
+    "disabled": false,
+    "runOnEdit": true,
+    "findRegex": "/<imgthink>([\\s\\S]*?)</imgthink>/g",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+        2
+    ],
+    "substituteRegex": 0,
+    "minDepth": null,
+    "maxDepth": null,
+    "markdownOnly": true,
+    "promptOnly": true
+}
